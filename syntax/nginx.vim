@@ -560,8 +560,6 @@ syn match ngxSSLProtocol 'TLSv1' contained nextgroup=ngxSSLProtocol,ngxSSLProtoc
 syn match ngxSSLProtocol 'TLSv1\.1' contained nextgroup=ngxSSLProtocol,ngxSSLProtocolDeprecated skipwhite
 syn match ngxSSLProtocol 'TLSv1\.2' contained nextgroup=ngxSSLProtocol,ngxSSLProtocolDeprecated skipwhite
 syn match ngxSSLProtocol 'TLSv1\.3' contained nextgroup=ngxSSLProtocol,ngxSSLProtocolDeprecated skipwhite
-" For NGINX+
-" syn match ngxSSLDirective ssl_conf_command
 
 " Do not enable highlighting of insecure protocols if sslecure is loaded
 if !exists('g:loaded_sslsecure')
@@ -704,6 +702,7 @@ syn keyword ngxDirective app_protect_security_log_enable
 " For NGINX+ Core class
 syn keyword ngxDirective header
 syn keyword ngxDirective body
+syn keyword ngxDirective ssl_conf_command
 
 
 " Do not enable highlighting of insecure ciphers if sslecure is loaded
