@@ -701,6 +701,9 @@ syn keyword ngxDirective app_protect_enable
 syn keyword ngxDirective app_protect_policy_file
 syn keyword ngxDirective app_protect_security_log
 syn keyword ngxDirective app_protect_security_log_enable
+" For NGINX+ Core class
+syn keyboard ngxDirective header
+syn keyboard ngxDirective body
 
 
 " Do not enable highlighting of insecure ciphers if sslecure is loaded
