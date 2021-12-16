@@ -702,8 +702,8 @@ syn keyword ngxDirective app_protect_security_log_enable
 " For NGINX+ Core class
 syn keyword ngxDirective header
 syn keyword ngxDirective body
-syn keyword ngxDirective ssl_conf_command
-
+syn keyword ngxDirective ssl_conf_command nextgroup=ngxSSLProtocol,ngxSSLProtocolDeprecated skipwhite
+syn match ngxSSLProtocol 'Ciphersuites' contained nextgroup=ngxSSLProtocol,ngxSSLProtocolDeprecated skipwhite
 
 " Do not enable highlighting of insecure ciphers if sslecure is loaded
 if !exists('g:loaded_sslsecure')
