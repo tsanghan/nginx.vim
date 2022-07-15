@@ -699,6 +699,12 @@ syn keyword ngxDirective app_protect_enable
 syn keyword ngxDirective app_protect_policy_file
 syn keyword ngxDirective app_protect_security_log
 syn keyword ngxDirective app_protect_security_log_enable
+syn keyword ngxDirective app_protect_dos_enable
+syn keyword ngxDirective app_protect_dos_name
+syn keyword ngxDirective app_protect_dos_policy_file
+syn keyword ngxDirective app_protect_dos_monitor
+syn keyword ngxDirective app_protect_dos_security_log_enable
+syn keyword ngxDirective app_protect_dos_security_log
 " For NGINX+ Core class
 syn keyword ngxDirective header
 syn keyword ngxDirective body
